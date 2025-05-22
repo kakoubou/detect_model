@@ -1,0 +1,4 @@
+train: /content/drive/MyDrive/yolov10/data/train_dataset/images
+val: /content/drive/MyDrive/yolov10/data/train_dataset/images
+nc: 3  # 类别数，修改为你的类别数
+names: ["telephone_number", "total_fee", "store_name"]  # 类别名，按顺序填写

@@ -1,0 +1,3 @@
+telephone_number
+total_fee
+store_name
