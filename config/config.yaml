@@ -1,0 +1,8 @@
+model: './logs/yolov10s.pt'
+train_data: "./data/train_dataset/data.yaml"
+train_epoch: 100
+imgsz: 640
+
+predict_model: "./runs/detect/train/weights/best.pt"
+predict_data: "./data/test_images"
+predict_save: True
