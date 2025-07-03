@@ -144,7 +144,11 @@ wandb/
 tests/
 .DS_Store
 /logs/*
-!/logs/yolov10s.pt
+!/logs/.gitkeep
+data/**
+!data/**/.gitkeep
+runs/**
+!runs/**/.gitkeep
 #/data/*
 #!.gitkeep
 
