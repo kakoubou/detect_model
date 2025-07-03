@@ -146,8 +146,13 @@ tests/
 /logs/*
 !/logs/.gitkeep
 data/**
+!data/
+!data/**/
 !data/**/.gitkeep
+
 runs/**
+!runs/
+!runs/**/
 !runs/**/.gitkeep
 #/data/*
 #!.gitkeep
