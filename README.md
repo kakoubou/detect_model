@@ -88,9 +88,9 @@ Google Colab上での環境設定については、[レシートの分類モデ�
 
 ## 6. 付録
 
-本プロジェクトで使用した物体検出アルゴリズム：[YOLOv10][YOLOv10]
-本プロジェクトで使用したアノテーションツール：[labelImg][labelImg]
-本プロジェクトで使用した水増し手法：[albumentations][albumentations]
+- 物体検出アルゴリズム：[YOLOv10][YOLOv10]
+- アノテーションツール：[labelImg][labelImg]
+- 水増し手法：[albumentations][albumentations]
 
 
 [YOLOv10]: https://github.com/THU-MIG/yolov10
