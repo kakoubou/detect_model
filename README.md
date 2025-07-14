@@ -50,8 +50,7 @@
 
 <img src="images/image1.png" width="400"/>
 
-アノテーション完了後、学習用・検証用画像およびラベルファイル、テスト用画像をそれぞれ `data/` 内の `train/`、`val/`、`test/` フォルダに配置し、  
-以降の学習および推論時に使用できるようにしました。  
+アノテーション完了後、学習用・検証用画像およびラベルファイル、テスト用画像をそれぞれ `data/` 内の `train/`、`val/`、`test/` フォルダに配置し、以降の学習および推論時に使用できるようにしました。  
 本プロジェクトでは、画像構造が比較的シンプルなコンビニレシートの物体検出を行うため、比較的軽量なYOLOv10s構造を採用しました。  
 また、学習の高速化と安定性向上のため、学習前にYOLOv10sの事前学習済みモデルを `logs/` フォルダに配置し、学習時に読み込めるように準備しました。  
 
@@ -60,9 +59,9 @@
 ## 4. モデル学習
 
 Google Colabが無料でGPUを提供しているため、本プロジェクトのモデル学習はGoogle Colab上で行いました。  
-Google Colab上での環境設定については、[レシートの分類モデルのREADME.md](https://github.com/kakoubou/classification_model/blob/main/README.md#4-モデル学習)をご参照ください。  
+Google Colab上での環境設定については、[レシートの分類モデルのREADME.md](https://github.com/kakoubou/classification_model/blob/main/README.md#4-モデル学習)を参照してください。  
 コードやデータのアップロード、Python依存関係のインストールなど環境設定が完了した後、[`train.py`](./train.py)を実行することでモデル学習を開始できます。  
-本プロジェクトは文字に関する物体検出であるため、学習データセットに対する水増しでは、YOLOシリーズで一般的なMosaicデータ拡張は使用せず、文字データにより適した[albumentations][albumentations]を用いています。  
+本プロジェクトは文字に関する物体検出であるため、学習データセットに対する水増しでは、YOLOでよく使用されるMosaic水増し手法を使用せず、文字データにより適した[albumentations][albumentations]を用いています。  
 以下の図は、[albumentations][albumentations]による水増しを行った後の画像例で、モーションブラー、ガウスノイズ、幾何変換、圧縮によるノイズなどが含まれています。  
 
 <img src="images/image2.png" width="500"/>
