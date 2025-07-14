@@ -1,5 +1,5 @@
 model: './logs/yolov10s.pt'
-train_data: "./data/train_dataset/data.yaml"
+train_data: "./data/train/data.yaml"
 train_epoch: 100
 imgsz: 640
 
