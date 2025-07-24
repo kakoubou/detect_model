@@ -145,6 +145,8 @@ tests/
 .DS_Store
 /logs/*
 !/logs/.gitkeep
+/models/*
+!/models/.gitkeep
 data/**
 !data/
 !data/**/
